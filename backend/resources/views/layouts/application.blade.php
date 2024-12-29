@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   @yield('css')
-  <title>CoachTech フリマ</title>
+  <title>リアルポケモン図鑑</title>
 </head>
 
 <body>

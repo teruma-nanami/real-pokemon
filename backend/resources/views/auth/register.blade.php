@@ -16,15 +16,6 @@
           @enderror
         </div>
         <div class="form__inner-text">
-          <label for="email">メールアドレス
-            <input type="text" name="email" placeholder="email" value="{{ old('email') }}"></label>
-        </div>
-        <div class="form__error">
-          @error('email')
-            {{ $message }}
-          @enderror
-        </div>
-        <div class="form__inner-text">
           <label for="password">パスワード
             <input type="password" name="password" placeholder="password"></label>
         </div>
