@@ -42,4 +42,28 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // 全国図鑑で捕まえたポケモンを管理するリレーションシップ
+    public function nationalCaught()
+    {
+        return $this->belongsToMany(Pokemon::class, 'national_caught')->withPivot('caught');
+    }
+
+    // キタカミ図鑑で捕まえたポケモンを管理するリレーションシップ
+    public function kitakamiCaught()
+    {
+        return $this->belongsToMany(Pokemon::class, 'kitakami_caught')->withPivot('caught');
+    }
+
+    // ブルーベリー図鑑で捕まえたポケモンを管理するリレーションシップ
+    public function blueberryCaught()
+    {
+        return $this->belongsToMany(Pokemon::class, 'blueberry_caught')->withPivot('caught');
+    }
+
+    // パルデア図鑑で捕まえたポケモンを管理するリレーションシップ
+    public function paldeaCaught()
+    {
+        return $this->belongsToMany(Pokemon::class, 'paldea_caught')->withPivot('caught');
+    }
 }

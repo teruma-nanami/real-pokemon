@@ -7,8 +7,8 @@
       @csrf
       <div class="form__inner">
         <div class="form__inner-text">
-          <label for="email">メールアドレス
-            <input type="text" name="email" placeholder="email"></label>
+          <label for="username">ユーザー名
+            <input type="text" name="username" placeholder="ユーザー名"></label>
         </div>
         <div class="form__error">
           @error('email')
@@ -17,7 +17,7 @@
         </div>
         <div class="form__inner-text">
           <label for="password">パスワード
-            <input type="password" name="password" placeholder="Password"></label>
+            <input type="password" name="password" placeholder="パスワード"></label>
         </div>
         <div class="form__error">
           @error('password')
