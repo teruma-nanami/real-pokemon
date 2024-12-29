@@ -1,0 +1,1 @@
+{!! link_to_asset(url, title = null, attributes = [], secure = null) !!}
